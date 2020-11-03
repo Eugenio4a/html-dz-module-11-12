@@ -1,0 +1,230 @@
+:root {
+    --main-blue: rgb(56, 183, 221);
+}
+
+.wrapper {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.text-info {
+    background-color: rgb(56, 183, 221);
+}
+
+.fa-bell:before,
+.fa-user-circle:before,
+.fa-door-open:before {
+    color: rgba(248, 240, 240, 0.61);
+    font-size: 25px;
+}
+
+.student {
+    font-size: 30px;
+    color: #fff;
+}
+
+.links {
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 18px;
+    color: rgba(248, 240, 240, 0.81);
+}
+
+.icon-nav {
+    padding-left: 10px;
+}
+
+.links:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links:focus {
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+}
+
+.icon-nav:hover {
+    transform: scale(1.1);
+}
+
+.inp {
+    margin-top: 17px;
+    width: 200px;
+}
+
+.tab-pane .top:not(:last-child) {
+    margin-right: 80px;
+}
+
+.btn {
+    background-color: var(--main-blue) !important;
+    color: #fff !important;
+    padding: 3px 12px 3px 12px !important;
+}
+
+.lesson-topic {
+    box-sizing: border-box;
+    margin-right: 40px !important;
+}
+
+.top-table {
+    background-color: var(--main-blue);
+    opacity: 0.3;
+    color: #fff;
+}
+
+.select {
+    width: 75px;
+    height: 35px;
+    border-radius: 6px;
+    border-color: rgba(65, 60, 60, 0.5);
+    ;
+}
+
+.table {
+    text-align: center;
+}
+
+
+/* chackbox */
+
+.control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control_indicator {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background: #ffffff;
+    border: 2px solid #3eff03;
+    border-radius: undefinedpx;
+}
+
+.control:hover input~.control_indicator,
+.control input:focus~.control_indicator {
+    background: #3eff03;
+}
+
+.control input:checked~.control_indicator {
+    background: #3eff03;
+}
+
+.control:hover input:not([disabled]):checked~.control_indicator,
+.control input:checked:focus~.control_indicator {
+    background: #0e6647;
+}
+
+.control input:disabled~.control_indicator {
+    background: #fc9d9d;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked~.control_indicator:after {
+    display: block;
+}
+
+.control-radio .control_indicator {
+    border-radius: 50%;
+}
+
+.control-radio .control_indicator:after {
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.control-radio input:disabled~.control_indicator:after {
+    background: #f48b8b;
+}
+
+.control-group {
+    display: flex;
+    justify-content: center;
+}
+
+.ci2 {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background: #ffffff;
+    border: 2px solid #d9ff03;
+    border-radius: undefinedpx;
+}
+
+.control:hover input~.ci2,
+.control input:focus~.ci2 {
+    background: #d9ff03;
+}
+
+.control input:checked~.ci2 {
+    background: #d9ff03;
+}
+
+.ci3 {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background: #ffffff;
+    border: 2px solid #ff0b03;
+    border-radius: undefinedpx;
+}
+
+.control:hover input~.ci3,
+.control input:focus~.ci3 {
+    background: #ff0b03;
+}
+
+.control input:checked~.ci3 {
+    background: #ff0b03;
+}
+
+.table td,
+.table th {
+    padding: 12px;
+    vertical-align: auto !important;
+    border-top: 1px solid #dee2e6;
+}
+
+textarea {
+    height: 35px;
+    max-height: 55px;
+    min-height: 35px;
+    border-radius: 6px;
+    border-color: rgba(65, 60, 60, 0.5);
+}
+
+.right-cont {
+    margin-right: 150px;
+}
