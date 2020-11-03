@@ -41,7 +41,7 @@
 }
 
 .links:focus {
-    color: rgb(78, 78, 78);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -61,7 +61,7 @@
 .btn {
     background-color: var(--main-blue) !important;
     color: #fff !important;
-    padding: 3px 12px 3px 12px !important;
+    padding: 4px 13px 3px 13px !important;
 }
 
 .lesson-topic {
@@ -249,4 +249,20 @@ textarea {
 .modal-dialog {
     max-width: 500px;
     margin: 13.75rem auto !important;
+}
+
+.select-lg {
+    width: 150px;
+}
+
+.top-table th {
+    width: 10px;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+i {
+    color: var(--main-blue);
+    font-size: 35px;
+    vertical-align: middle;
 }
